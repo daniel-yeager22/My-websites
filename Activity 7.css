@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    word-spacing: 8px;
+}
+img {
+    width: 700px;
+    height: 700px;
+    border-radius: 10px; 
+    cursor: pointer;
+}
+.img {
+    max-width: 1000px;
+}   
+header {
+    background-color:#0e1d21;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    transition: all 0.30s ease;
+}
+header h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: #e5e5e5;
+    margin-bottom: 2rem;
+    padding: 3rem;
+}
+header span {
+    background-color: #e5e5e5;
+    color: #0e1d21;
+    padding: 0px 15px;
+    transition: all 0.30s ease;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+nav a {
+    color: #e5e5e5;
+    font-weight: 500;
+    font-size: 22px;
+    transition: all 0.30s ease;
+}
+nav a:hover {
+    background-color: #e5e5e5;
+    color: #0e1d21;
+}
+body {
+    margin-top: 15%;
+    background-color: #e5e5e5;
+}
+section {
+    min-height: 50vh;
+    display: flex;
+    gap: 100px;
+    padding: 30px;
+    transition: all 0.30s ease;
+}
+span { 
+    background-color: #0e1d21;
+    color: #f8efe5;
+    padding: 0px 15px;
+    transition: all 0.30s ease;
+}
+
+.web-dev h2,
+.movies h2,
+.food h2 {
+    font-size: 4rem;
+    cursor: pointer;
+    color: #0e1d21;
+    transition: all 0.30s ease;
+}
+.web-dev h2:hover,
+.movies h2:hover,
+.food h2:hover {
+    color: #415a77;
+    
+}
+
+.web-dev p,
+.movies p,
+.food p {
+    font-size: 30px;
+}
+.description {
+    max-width: 1000px;
+    line-height: 80px;
+    transition: all 0.30s ease;
+    align-content: center;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    padding: 5rem;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+ 
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        padding: 2rem;
+    }
+    nav ul {
+        gap: 40px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    img {
+        width: 400px;
+        height: 400px;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+    } 
+    body {
+        margin-top: 15em;
+    }
+    section {
+        flex-direction: column;
+    }
+
+    .web-dev h2,
+    .movies h2,
+    .food h2 {
+        font-size: 2rem;
+    }
+    
+    .web-dev p,
+    .movies p,
+    .food p {
+        font-size: 28px;
+    }
+    .description {
+        line-height: 40px;
+        margin-left: 1.5rem;
+        text-align: center;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 900px) {
+    header h1 {
+        font-size: 3.2rem;
+        margin-bottom: 1rem;
+        padding: 2rem;
+    }
+    nav ul {
+        gap: 40px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    img {
+        width: 500px;
+        height: 500px;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+    } 
+    body {
+        margin-top: 17em;
+    }
+    section {
+        flex-direction: column;
+    }
+
+    .web-dev h2,
+    .movies h2,
+    .food h2 {
+        font-size: 3rem;
+    }
+    
+    .description {
+        line-height: 50px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 50px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    header h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        padding: 2rem;
+    }
+    nav a {
+        font-size: 22px;
+    }
+    img {
+        width: 600px;
+        height: 600px;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+    } 
+    body {
+        margin-top:16em;
+    }
+    section {
+        flex-direction: column;
+    }
+
+    .web-dev h2,
+    .movies h2,
+    .food h2 {
+        font-size: 3.5rem;
+    }
+    
+    .web-dev p,
+    .movies p,
+    .food p {
+        font-size: 30px;
+    }
+    .description {
+        line-height: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 50px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+    header h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        padding: 2rem;
+    }
+    nav a {
+        font-size: 22px;
+    } 
+    img {
+        width: 600px;
+        height: 600px;
+    }
+    .img {
+        display: flex;
+        justify-content: center;
+    } 
+    body {
+        margin-top: 15em;
+    }
+    section {
+        flex-direction: row;
+    }
+
+    .web-dev h2,
+    .movies h2,
+    .food h2 {
+        font-size: 3.5rem;
+    }
+    
+    .web-dev p,
+    .movies p,
+    .food p {
+        font-size: 30px;
+    }
+    .description {
+        line-height: 60px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-width: 50px;
+    }
+}

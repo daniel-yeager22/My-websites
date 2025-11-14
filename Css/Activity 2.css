@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 30px;
+}
+button {
+    position: relative;
+    inset: -10px auto auto -10px;
+    padding: 3px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 2px #000 solid;
+    font-weight: 700;
+    transition: all 0.2s ease 0s;
+}
+a {
+    text-decoration: none; 
+    color: #000;
+}
+button:hover {
+    background-color: #f7971e;
+    border: 2px #f7971e solid;
+}
+.title {
+    font-size: 30px;
+    line-height: 40px;
+}
+.course-title {
+    padding: 0px 0px 40px 0px;
+}
+.main {
+    font-size: 50px;
+    padding: 20px 0px;
+}
+img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+
+}
+.html-container, .css-container, .js-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    position: relative;
+    background-color: #0035ff;
+    padding: 1px;
+    z-index: 1;
+}
+.html-container::after, .html-container::before, .css-container::after, .css-container::before, .js-container::after, .js-container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    background: conic-gradient(from var(--daniel), #ffd200,  #f7971e, red, #1200ff, #00e5ff, #ffd200 );
+    translate: -50% -50%;
+    padding: 5px;
+    z-index: -1;
+    animation: 3s spin linear infinite;
+}
+.html-container::before, .css-container::before, .js-container::before {
+    filter: blur(1.5rem);
+    opacity: 20%;
+}
+@keyframes spin {
+    from {
+        --daniel: 0deg;
+    }
+    to {
+        --daniel: 360deg;
+    }
+}
+@property --daniel {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.html-section {
+    background: linear-gradient(135deg, #ff2525, #ffe53b);
+    color: #ffffff;
+    display: flow-root;
+    padding: 30px;
+}
+.css-section {
+    background: linear-gradient(135deg, #0035ff, #1200ff);
+    color: #ffffff;
+    display: flow-root;
+    padding: 30px;
+}
+.js-section {
+    background: linear-gradient(135deg, #ffd200,  #f7971e);
+    color: #ffffff;
+    display: flow-root;
+    padding: 30px;
+}
+.html,.html-container {
+    float: left;
+    margin-right: 30px;
+    transition: all .10s ease;
+}
+.css, .css-container {
+    float: right;
+    transition: all .10s ease;
+}
+.js, .js-container {
+    float: left;
+    margin-right: 30px;
+    transition: all .10s ease;
+}
+@media (max-width: 500px) {
+    img {
+        width: 450px;
+        height: 450px;
+    }
+    .main {
+        line-height: 50px;
+    }
+    .html-container, .css-container, .js-container {
+        width: 350px;
+        height: 350px;
+        margin: 40px;
+    }
+    img {
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+        position: relative;
+    }
+    section p {
+        font-size: 20px;
+    }
+}

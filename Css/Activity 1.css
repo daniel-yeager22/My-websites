@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* { 
+    font-family: "Montserrat", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    word-spacing: 12px;
+}
+button {
+    padding: 6px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px #0e1d21 solid;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #000;
+    transition: all 0.2s ease 0s;
+}
+button:hover {
+    background-color: #0e1d21;
+    color: #fff;
+}
+header h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 20px;
+}
+span {
+    background-color: #0e1d21;
+    color: #fff;
+    padding: 5px 20px;
+}
+.container {
+    display: flex;
+}
+.content {
+    width: 100%;
+    min-width: 400px;
+    padding: 25px;
+}
+.ingredients h2, .instructions h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #563412;
+}
+
+.ingredients li, .instructions li {
+    margin-left: 1rem;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+    line-height: 35px;
+}
+.img-container {
+    width: 100%;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#0e1d21;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 50px;
+}
+img {
+    border-radius: 50%;
+    width: 700px;
+    height: 700px;
+    min-width: 100px;
+}
+@media (max-width: 500px) {
+    header h1 {
+        text-align: center;
+        font-size: 2rem;
+        padding: 15px;
+        line-height: 40px;
+    }
+    .ingredients h2, .instructions h2 {
+        font-size: 1.8rem;
+    }
+    .ingredients li, .instructions li {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .content {
+        padding: 25px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    img {
+        width: 400px;
+        height: 400px;
+    }
+    .img-container {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1500px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

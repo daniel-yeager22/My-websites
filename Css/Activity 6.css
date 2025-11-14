@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    word-spacing: 10px;
+}
+body {
+    position: relative;
+}
+button {
+    position: absolute;
+    padding:7px 20px;
+    inset: 20px auto auto 20px;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #e5e5e5;
+    border: #0e1d21 2px solid;
+    transition: all 0.30s ease 0s;
+}
+button:hover {
+    background-color: #0e1d21;
+    color: #e5e5e5;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+span {
+    background-color: #f8efe5;
+    color: #0e1d21;
+    padding: 0px 15px;
+}
+section {
+    position: relative;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    /* justify-content: center;
+    align-items: center;
+    gap: 50px; */
+}
+.bday-img {
+    /* background-color: seagreen; */
+    height: 900px;
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    height: 700px;
+    min-width: 500px;
+}
+.bday-details {
+    min-height: 100%;
+    min-width: 500px;
+    /* background: linear-gradient(135deg, #a47148, #d1a996, #f2d9c7,  #563412); */
+    background-color: #0e1d21;
+    color: #f8efe5;
+    align-content: center;
+    line-height: 100px;
+    
+}
+.bday-details h1 {
+    line-height: 100px;
+}
+h1 {
+    font-size: 5rem;
+    margin-left: 50px;
+}
+h3{
+    font-size: 3rem;
+    margin-left: 50px;
+}
+li {
+    font-size: 24px;
+    line-height: 50px;
+    margin-left: 100px;
+}
+h4 {
+    font-size: 22px;
+    position: relative;
+    inset: 60px auto;
+    margin-left: 50px;
+}
+p {
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+@media (min-width: 500px) and (max-width: 800px) {
+    section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        /* flex-direction: column-reverse; */
+    }
+    .bday-img {
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bday-img img {
+        height: 500px;
+        min-width: 200px;
+    }
+    .bday-details {
+        height: 700px;
+        min-width: 200px;
+        align-content: center;
+        line-height: 50px;
+    }
+    .bday-details h1 {
+        line-height: 80px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    li {
+        font-size: 20px;
+        line-height: 40px;
+        margin-left: 100px;
+    }
+    h4 {
+        font-size: 22px;
+        position: relative;
+        inset:20px auto;
+    }
+    p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1000px) {
+    section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}

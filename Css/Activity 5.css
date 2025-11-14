@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* { 
+    font-family: "Montserrat", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    word-spacing: 8px;
+}
+body {
+    position: relative;
+}
+header {
+    position: absolute;
+}
+a button {
+    background-color: #e5e5e5;
+    border: #0e1d21 2px solid;
+    padding: 8px 20px; 
+    border-radius: 5px;
+    color: #0e1d21;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    inset: 15px 15px;
+}
+.container {
+    min-height: 100vh;      
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 1fr;
+}
+.about {
+    background-color: #e5e5ee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .contact {
+    height: 800px;
+    width: 800px;
+    
+}
+.contact h1 { 
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+span {
+    background-color: #0e1d21;
+    color: #f8efe5;
+    padding: 0px 15px;
+}
+.contact p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 40px;
+}
+.details {
+    height: 500px;
+    align-content: center;
+}
+.details p {
+    border-bottom: 1px #000 solid;
+    line-height: 100px;
+    margin-top: 40px;
+}
+.details button {
+    padding: 15px 379px;
+    margin-top: 50px;
+    border: none;
+    word-spacing: 15px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 0.20s ease;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0e1d21;
+    color: #e5e5e5;
+}
+.info {
+    background-color: #0e1d21;
+    align-content:space-evenly;
+    flex-wrap: wrap;
+}
+.info p {
+    color: #f8efe5;
+    font-size: 22px;
+    font-weight: 600px;
+    line-height: 120px;
+    margin-left: 40px;
+}
+
+@media (max-width: 500px) {
+.container {
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 60%;
+}
+.about {
+    background: linear-gradient(135deg, #d1a996, #f2d9c7, #a36361);     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.about .contact {
+    height: 600px;
+    width: 500px;
+    margin-left: 10px;
+}
+.contact h1 { 
+    font-size: 3rem;
+}
+.contact p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.details {
+    height: 400px;
+    align-content: center;
+}
+.details p {
+    line-height: 70px;
+}
+.details button {
+    padding: 12px 200px;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 50px;
+}
+.info {
+    align-content:flex-start;
+}
+.info p {
+    font-size: 18px;
+    line-height: 80px;
+}
+}
+@media (min-width: 501px) and (max-width: 700px) {
+    .container {
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 60%;
+    }
+    .about {
+        background: linear-gradient(135deg, #d1a996, #f2d9c7, #a36361);     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+    }
+    .about .contact {
+        height: 600px;
+        width: 500px;
+        margin-left: 10px;
+    }
+    .contact h1 { 
+        font-size: 3rem;
+    }
+    .contact p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .details {
+        height: 400px;
+        align-content: center;
+    }
+    .details p {
+        line-height: 70px;
+    }
+    .details button {
+        padding: 12px 200px;
+        font-weight: 600;
+        font-size: 18px;
+        margin-top: 50px;
+    }
+    .info {
+        align-content:flex-start;
+    }
+    .info p {
+        font-size: 18px;
+        line-height: 80px;
+    }
+    }
+@media (min-width:701px) and (max-width: 800px) {
+.container {
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 70%;
+}
+.about .contact {
+    width: 600px;
+    height: 700px;
+}
+.contact h1 {
+    font-size: 4rem;
+}
+.contact p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.details button {
+    padding: 15px 270px;
+    font-size: 20px;
+}
+.info{
+    color: #f8efe5;
+    font-size: 20px;
+    line-height: 100px;
+}
+    
+}
+@media (min-width: 801px) and (max-width: 1500px) {
+
+.container {
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 70%;
+}
+.about .contact {
+    height: 600px;
+    width: 700px;
+    margin-left: 10px;
+}
+.contact h1 { 
+    font-size: 5rem;
+}
+.contact p {
+    font-size: 22px;
+    line-height: 30px;
+}
+.details {
+    height: 400px;
+    align-content: center;
+}
+.details p {
+    line-height: 70px;
+}
+.details button {
+    padding: 15px 320px;
+    font-weight:700;
+    font-size: 20px;
+    margin-top: 50px;
+}
+.info {
+    align-content:flex-start;
+}
+.info p {
+    font-size: 22px;
+    line-height: 80px;
+}
+}   

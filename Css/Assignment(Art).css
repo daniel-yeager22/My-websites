@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+header {
+    background-color:#0e1d21;
+    padding: 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    transition: all .30s ease;
+}
+.navbar { 
+    display: flex;
+}
+.nav-left {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px; 
+}
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.search-bar {
+    position: relative;
+    height: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #e5e5e5;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+}
+.search-bar input {
+    border: none;
+    outline: none;
+    font-weight: 500;
+    background-color: transparent;
+}
+.search-bar a .fas {
+    color: #0a0a0a;
+    font-size: 18px;
+}
+.sign-in-button {
+    white-space: nowrap;
+    border: none;
+    border-radius: 40px;
+    padding: 9px 25px;
+    font-weight: bold;
+    background-color: #e5e5e5;
+    color: #0e1d21;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+}
+
+nav ul{
+    width: 100vh;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.30s ease 0s;
+}
+
+li {
+    font-weight: 500;
+}
+a {
+    text-decoration: none;
+    color: #e5e5e5;
+    transition: all 0.30s ease;
+}
+a:hover {
+    background-color: #e5e5e5;
+    color: #0e1d21;
+}   
+.logo {
+    position: absolute;
+    top: 45px;
+    color: #e5e5e5;
+    font-size: 30px;
+    font-weight: bold;
+    word-spacing: 5px;
+}
+.text {
+    font-family: 'Pacifico', cursive;
+    background-color: #e5e5e5;
+    color: #0e1d21;
+    text-align: center;
+    padding: 4rem;
+    font-size: 3rem;
+    word-spacing: 5px;
+    transition: all .30s ease;
+}
+/* .separators {
+    background-color: #8e8c8b;
+    width: 0;
+    height: 0;
+    border-right: 99.2vw solid transparent;
+    border-bottom: 13.9vw solid #dddddd;
+} */
+span { 
+    background-color: #0e1d21;
+    color: #e5e5e5;
+    padding: 0px 15px;
+}
+.description {
+    min-height: 80vh;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+/* .img-container {
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    margin-top: 0px 30px;
+    background-color: #040411;
+} */
+.description-img {
+    width: 500px;
+    height: 500px;
+    border-radius: 5px;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+.description-text {
+    font-size: 26px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 700;
+    padding: 0px 20px;
+    margin: 0px 10px;
+    transition: all .50s ease;
+}
+.price-list {
+    padding: 50px 0px;
+    background-color: #e5e5e5;
+    text-align: center;
+    font-size: 1.5rem;
+    word-spacing: 10px;
+}
+.card-container {
+    min-height: 100vh;
+    background-color:#e5e5e5;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    row-gap: 60px;
+    align-items: center;
+    padding: 15px 0px 50px;
+}
+.card {
+    position: relative;
+    width: 350px;
+    height: 700px;
+    background-color: #fff5e1;
+    color: #0a0a0a;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 45px;
+    box-shadow: 5px 5px 15px #8e8c8b;
+    transform: rotate(-1deg);
+    transition: transform 0.3s ease;
+    line-height: 40px;
+}
+.card:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+.charcoal {
+    background-color: #fff5e1;
+}
+.colored {
+    background-color: #fff5e1;
+}
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    border-radius: 20px 20px 0px 0px;
+    width: 350px;
+    height: 400px;  
+    right: -0.1%;
+}
+.content {
+    position: relative;
+    top: 60%;
+    color: #333;
+}
+.price {
+    font-size: 2rem;
+}
+ul {
+    list-style: none;
+}
+.commission-button {
+    background: #a36361;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 20px 100px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: transform 0.3s ease 0s;
+}
+.commission-button:hover {
+    background: #d4a18a;
+    box-shadow: 0 0 20px #f5f5f5;
+}
+.team-section {
+    min-height: 100vh;
+    background-color: #e1dad3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 3rem;
+    padding: 4rem 2rem;
+    align-items: center;
+}
+.profile-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 1px #0e1d21 solid;
+}
+.team-member {
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #8e8c8b; */
+    padding: 2rem;
+    border-radius: 10px;
+    /* max-width: 300px; */
+    text-align: center;
+    height: 670px;
+    width: 400px;
+}
+.team-member h2 {
+    font-size: 26px;
+    margin-bottom: 0.5rem;
+}
+  
+.team-member h3 {
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 1rem;
+}
+  
+.team-member p {
+    font-size: 18px;
+    color: #555;
+}
+  
+.team-member button {
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #0e1d21;
+    color: #e5e5e5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.team-member button:hover {
+    background-color: #e5e5e5;
+    color: #0a0a0a;
+}
+
+footer {
+    background-color: #0e1d21;
+    color: #e5e5e5;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 6rem;
+}
+
+@media (max-width: 500px) {
+    header {
+        padding: 1rem;
+    }
+    .nav-left {
+        min-height: 100px;
+        min-width: 50vh;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        top: 10px;
+        font-size: 18px;
+    }
+    .nav-right {
+        min-height: 100px;
+        min-width: 50vh;
+        position: relative;
+        right: 500px;
+        top: 10px;
+        transition: position 0.5s ease;
+    }
+    .search-bar {
+        left: 20px;
+        background-color: #0e1d21;
+    }
+    .search-bar a .fas {
+        color: #dddddd;
+        font-size: 22px;
+    }
+    .search-bar input {
+        width: 0.1px;
+    }
+    .logo {
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        font-size: 28px;
+    }
+    .text {
+        padding: 3.3rem;
+        font-size: 1.8rem;
+    }
+    .description {
+        flex-direction: column;
+    }
+    .description-img {
+        width: 300px;
+        height: 300px;
+        margin: 10px 30px;
+    }
+    .description-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .card {
+        width: 350px;
+        height: 700px;
+        line-height: 40px;
+    }
+    .picture {
+        width: 350px;
+        height: 400px;  
+    }
+    .content {
+        top: 60%;
+    }
+    .commission-button {
+        padding: 20px 100px;
+    }
+    ul {
+        position: relative;
+        top: -10px;
+    }
+    .team-section {
+        min-height: 100vh;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .about-us-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: relative;
+    }
+    .img {
+        width: 150px;
+        height: 150px;
+    }
+    .img p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 800px) {
+    header {
+        padding: 1rem;
+    }
+    .nav-left {
+        position: relative;
+        top: 10px;
+        min-height: 100px;
+        align-items: flex-end;
+    }
+    .nav-right {
+        position: relative;
+        top: 10px;
+        min-width: 30vh;
+        justify-content: flex-start;
+    }
+    .logo {
+        position: absolute;
+        top: 25px;
+        left: 10px;
+        font-size: 28px;
+    }
+    .text {
+        padding: 3rem;
+        font-size: 2.2rem;
+    }
+
+    .description {
+        flex-direction: column;
+    }
+    .description-img {
+        width: 400px;
+        height: 400px;
+        margin: 20px 30px;
+    }
+    .description-text {
+        font-size: 22px;
+        line-height: 40px;
+    }
+    .team-section{
+        min-height: 100vh;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    .about-us-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        position: relative;
+    }
+    .img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 700px) {
+    .nav-right {
+        right: 80px;
+    }
+
+}
+
+@media (min-width: 501px) and (max-width: 600px) {
+    .nav-right {
+        right: 120px;
+        gap: 10px;
+    }
+    
+}
+
+@media (min-width: 801px) and (max-width: 1100px) {
+    header {
+        padding: 1rem;
+
+    }
+    .nav-left {
+        position: relative;
+        top: 10px;
+        min-height: 100px;
+        align-items: flex-end;
+    }
+    .nav-right {
+        position: relative;
+        top: 10px;
+        min-width: 30vh;
+        justify-content: flex-end;
+    }
+    .logo {
+        position: absolute;
+        top: 25px;
+        left: 10px;
+    }
+}
+
+@media (min-width: 1101px) and (max-width:1300px) {
+    header {
+        padding: 1rem;
+    }
+    .nav-left {
+        position: relative;
+        top: 10px;
+        min-height: 100px;
+        align-items: flex-end;
+    }
+    .nav-right {
+        position: relative;
+        top: 10px;
+        min-width: 30vh;
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1200px) {
+    .text {
+        padding: 3.5rem;
+        font-size: 2.2rem;
+    }
+    .description {
+        flex-direction:column;
+    }
+    .description-img {
+        width:450px;
+        height: 450px;
+        margin: 30px 30px;
+    }
+    .description-text {
+        font-size: 24px;
+    }
+}

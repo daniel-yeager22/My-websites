@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* { 
+    font-family: "Montserrat", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    word-spacing: 12px;
+    background-color: #8809ff;
+}
+button a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    inset: 20px auto auto 20px;
+}
+
+.title {
+    padding: 2rem;
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 4.5rem;
+    color: #0e1d21;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.content {
+    flex: 2;
+    min-width: 500px;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.img-container {
+    flex: 1;
+    min-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 800px;
+    max-width: 800px;
+    height: 800px;
+    border-radius: 50%;
+}
+
+.ingredients, .instructions {
+    margin-bottom: 2rem;
+}
+
+.ingredients h2, .instructions h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.ingredients li, .instructions li {
+    margin-left: 1rem;
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+    line-height: 40px;
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 5rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .title {
+        padding: 3rem;
+    }
+    .title h1 {
+        font-size: 2.2rem;
+    }
+
+    .ingredients h2, .instructions h2 {
+        font-size: 1.5rem;
+    }
+    img {
+        width: 380px;
+        max-width: 500px;
+        height: 380px;
+        border-radius: 50%;
+    }
+    .img-container {
+        min-width: 500px;
+    }
+}
